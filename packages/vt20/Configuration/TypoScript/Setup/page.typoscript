@@ -8,6 +8,7 @@ page {
 
     includeCSS {
         main = EXT:vt20/Resources/Public/Css/main.css
+        custom = EXT:vt20/Resources/Public/Css/custom.css
     }
 
     includeJSFooter {
@@ -17,6 +18,8 @@ page {
         main = EXT:vt20/Resources/Public/Javascript/main.js
         util = EXT:vt20/Resources/Public/Javascript/util.js
     }
+
+    bodyTagAdd = class="is-preload"
 }
 
 page.10 = FLUIDTEMPLATE
@@ -58,5 +61,10 @@ page.10 {
         rootPageId = {$vt20.rootPageId}
         logoText = {$vt20.logoText}
         logoFile = {$vt20.logoFile}
+
+        socialmedia.twitter =   {$vt20.socialmedia.twitter}
+        socialmedia.facebook =  {$vt20.socialmedia.facebook}
+        socialmedia.instagram = {$vt20.socialmedia.instagram}
+        socialmedia.github =    {$vt20.socialmedia.github}
     }
 }

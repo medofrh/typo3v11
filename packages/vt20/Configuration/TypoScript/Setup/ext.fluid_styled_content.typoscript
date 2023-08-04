@@ -1,0 +1,6 @@
+lib.contentElement {
+    partialRootPaths {
+        100 = EXT:vt20/Resources/Private/Extensions/fluid_styled_content/Partials/
+        // 0 = EXT:fluid_styled_content/Resources/Private/Partials/
+    }
+}

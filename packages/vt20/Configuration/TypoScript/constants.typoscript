@@ -3,7 +3,12 @@
 vt20 {
     rootPageId = 1
 
-    logoText = Logo
+    logoText = My company
 
     logoFile = EXT:vt20/Resources/Public/Images/typo3_orange.svg
+
+    socialmedia.twitter = https://twitter.com/typo3
+    socialmedia.facebook = www.facebook.com/typo3
+    socialmedia.instagram = https://instagram.com/typo3_official
+    socialmedia.github = https://github.com/TYPO3/typo3
 }

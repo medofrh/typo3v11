@@ -1,4 +1,5 @@
 page.10.dataProcessing {
+
     ## Main Menu
     10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     10 {
@@ -6,5 +7,25 @@ page.10.dataProcessing {
         expandAll = 1
         levels = 2
         titleField = nav_title // title
+    }
+
+    ## Meta Menu
+    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    20 {
+        as = metaNav
+        special = directory
+        special.value = 13
+        levels = 1
+        titleField = nav_title // title
+    }
+
+    ## Rootline
+    30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    30 {
+        as = rootline
+        special = rootline
+        special.range = 0|-1
+        titleField = nav_title // title
+        includeNotInMenu = 1
     }
 }
