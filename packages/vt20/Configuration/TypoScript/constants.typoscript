@@ -1,0 +1,9 @@
+@import "EXT:vt20/Configuration/TypoScript/Constants/*.typoscript"
+
+vt20 {
+    rootPageId = 1
+
+    logoText = Logo
+
+    logoFile = EXT:vt20/Resources/Public/Images/typo3_orange.svg
+}

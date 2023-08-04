@@ -1,0 +1,62 @@
+
+page = PAGE
+
+page {
+    meta {
+        viewport = width=device-width, initial-scale=1, user-scalable=no
+    }
+
+    includeCSS {
+        main = EXT:vt20/Resources/Public/Css/main.css
+    }
+
+    includeJSFooter {
+        breakpoints = EXT:vt20/Resources/Public/Javascript/breakpoints.min.js
+        browser = EXT:vt20/Resources/Public/Javascript/browser.min.js
+        jquery = EXT:vt20/Resources/Public/Javascript/jquery.min.js
+        main = EXT:vt20/Resources/Public/Javascript/main.js
+        util = EXT:vt20/Resources/Public/Javascript/util.js
+    }
+}
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+    layoutRootPath = EXT:vt20/Resources/Private/Layout
+    partialRootPath = EXT:vt20/Resources/Private/Partials
+
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+        key.data = pagelayout
+
+        pagets__default = TEXT
+        pagets__default.value = EXT:vt20/Resources/Private/Templates/default.html
+
+        pagets__2colsidebar = TEXT
+        pagets__2colsidebar.value = EXT:vt20/Resources/Private/Templates/2colsidebar.html
+
+        default < .pagets__default
+    }
+
+    variables {
+        content0 < styles.content.get
+        content1 < styles.content.get
+        content2 < styles.content.get
+
+        content1 {
+            select.where = colPos = 1
+            slide = -1
+            slide.collect = -1
+        }
+
+        content2 {
+            select.where = colPos = 2
+        }
+            
+    }
+
+    settings {
+        rootPageId = {$vt20.rootPageId}
+        logoText = {$vt20.logoText}
+        logoFile = {$vt20.logoFile}
+    }
+}

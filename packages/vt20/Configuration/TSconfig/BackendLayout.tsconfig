@@ -1,0 +1,58 @@
+mod.web_layout.BackendLayouts {
+    default {
+        title = Standard Layout with Sidebar
+
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Sidebar
+                                colPos = 1
+                            }
+                            2 {
+                                name = Main Content
+                                colspan = 2
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    2colsidebar {
+        title = 2 columns in sidebar 
+        #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+        config {
+        backend_layout {
+            colCount = 5
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                1 {
+                    name = Sidebar
+                    colPos = 1
+                }
+                2 {
+                    name = Content Left
+                    colspan = 2
+                    colPos = 0
+                }
+                3 {
+                    name = Content Right
+                    colspan = 2
+                    colPos = 2
+                }
+                }
+            }
+            }
+        }
+        }
+    }
+}

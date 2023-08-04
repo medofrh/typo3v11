@@ -1,0 +1,20 @@
+{
+    "name": "medo/vt20",
+    "description": "This is description",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "version": "1.0.0",
+    "authors": [{
+        "name": "medo",
+        "email": "info@medo98.com"
+    }],
+    "require": {
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-fluid-styled-content": "^11.5"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "vt20"
+        }
+    }
+}
